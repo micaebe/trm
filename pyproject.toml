@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trm"
+version = "0.1.0"
+description = "A reimplementation of tiny recursive models"
+authors = [{ name = "Michael Eberhard", email = "you@example.com" }]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=2.8.0",
+    "numpy>=2.2.0",
+    "wandb>=0.22.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
